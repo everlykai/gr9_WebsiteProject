@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="members.css">
+      <link rel="stylesheet" type="text/css" href="lore.css">
+      <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  </head>
+    <title>star guardians</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+
+<!-- background -->
+    <div class="crossfade">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+      </div>
+<!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="lore.html" class="w3-bar-item w3-button">Lore</a>
+          <a href="lux.html" class="w3-bar-item w3-button">SG Members</a>
+
+        </div>
+  <div class="w3-black">
+            <button class="w3-button w3-black w3-xlarge" onclick="w3_open()"style="border-style:double;">=</button>
+            <div class="w3-container">
+              <h1 style="text-align:center;font-family: 'Cinzel Decorative', cursive;">L o r e</h1>
+              <br>
+            </div>
+          </div>
+
+        <div class="w3-container">
+          <p></p>
+        </div>
+        <script>
+          function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+          }
+
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+          }
+        </script>
+
+<!-- content -->
+  <div class="lore">
+    <p>Star Guardian is a series of parallel universe skins in League of Legends. They follow the story of a group of high school students who choose to become cosmic protectors and must battle enemies threatening the universe.</p>
+    <img src="hs.jpg"class="hs-img">
+    <p> However, they consequently learn of the anguish and perils associated with their newfound roles.</p>
+
+
+    <center>
+    <p style="font-size:14px;">SHORT STORY LINKS</p>
+      <p class="link">
+        <a href="https://universe.leagueoflegends.com/en_US/story/star-guardian-starfall/">
+          <img border="0" alt="W3Schools" src="ss1.png"class="ss">
+        </a>
+        <a href="https://universe.leagueoflegends.com/en_us/story/the-twilight-star">
+          <img border="0" alt="W3Schools" src="ss3.png"class="ss">
+        </a>
+        <a href="https://universe.leagueoflegends.com/en_us/story/pajama-party">
+          <img border="0" alt="W3Schools" src="ss4.png"class="ss">
+        </a>
+      </p>
+    </center>
+
+    <br>
+
+  </div>
+
+  </html>

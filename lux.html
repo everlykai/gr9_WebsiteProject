@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="members.css">
+      <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+      <style>
+      body {
+          background-image: url('sgbg.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        tr {
+            background-color: #FF73B9;
+
+        }
+
+        td:hover{
+            background-color: white;
+            color: black;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        th {
+            background-color: #FF73B9;
+            color: black;
+        }
+      </style>
+  </head>
+
+  <title>star guardians</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="lore.html" class="w3-bar-item w3-button">Lore</a>
+      <a href="lux.html" class="w3-bar-item w3-button">SG Members</a>
+    </div>
+
+      <!-- Page Content -->
+        <div class="w3-black">
+          <button class="w3-button w3-black w3-xlarge" onclick="w3_open()"style="border-style:double;">=</button>
+          <div class="w3-container">
+            <div class= "buttons">
+              <h1 style="font-family: 'Cinzel Decorative', cursive;">Members</h1>
+              <a href="lux.html"class="button button1">lux</a>
+              <a href="ahri.html" class="button button2">ahri</a>
+              <a href="raka.html"class="button button3">soraka</a>
+              <a href="ez.html"class="button button4">ezreal</a>
+            </div>
+          </div>
+        </div>
+
+
+      <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+      </script>
+
+<br>
+    <div class="content"
+            <div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <img src="lux.jpg"style="margin-left: 60px;margin-top: 50px;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="lux2.png"style="margin-left: 60px;margin-top: 50px;">
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  </script>
+
+ <br>
+  <div class="table">
+    <table>
+        <tr>
+          <th>YEAR</th>   <th>HOBBY</th>   <th>PROFICIENCY</th>   <th>FAVOURITE SUBJECT</th>
+        </tr>
+        <tr>
+          <th>3</th>   <th>Sleeping and eating</th>   <th>Light power</th>    <th>Music</th>
+        </tr>
+
+    </table>
+  </div>
+
+  <div class="abt">
+    <h2 style="font-family: 'Caladea', serif;font-size:14px;color:#FF73B9;">ABOUT STAR GUARDIAN LUX</h2>
+    <p>Cheerful, courageous, and just a bit clumsy, Lux shines the brightest among her Star Guardian team as its captain. While young and inexperienced compared to teammates like Janna, the pink-haired teen’s optimism inspires others in the face of an unkind—but in her eyes, noble—destiny. Protecting the universe is a responsibility that Lux is committed to, even if she doesn’t fully realize the gravity of it just yet. There are many challenges ahead on her journey to becoming a strong leader worthy of the First Star’s call. For now, Lux truly believes that as long as they fight together, there is no darkness they can’t overcome.<p>
+  </div>
+
+  <div class="quote"style="color:#FF73B9;">
+    <p>"We've got this, as long as we stick together!"</p>
+  </div>
+<br>
+
+  </body>
+</html>
